@@ -16,7 +16,7 @@ IDE: Xcode version 15.3 (15E204a)
 
 # **`SQLite`**
 
-# SQLite 설치
+## SQLite 설치
 
 1. brew를 이용하여 설치
 
@@ -32,7 +32,7 @@ sqlite3 --version
 
 ![](https://github.com/Peg-board/CPP_SQLite_database_search_example/blob/master/image/term/%EC%8A%A4%ED%81%AC%EB%A6%B0%EC%83%B7%202024-05-02%20%EC%98%A4%ED%9B%84%209.25.35.png?raw=true)
 
-# 데이터베이스 생성
+## 데이터베이스 생성
 
  다음 명령을 사용하여 `my.db`라는 이름의 데이터베이스를 만든다.
 
@@ -42,7 +42,7 @@ sqlite3 my.db
 
 ![](https://github.com/Peg-board/CPP_SQLite_database_search_example/blob/master/image/term/%EC%8A%A4%ED%81%AC%EB%A6%B0%EC%83%B7%202024-05-02%20%EC%98%A4%ED%9B%84%209.33.29.png?raw=true)
 
-# 테이블 생성
+## 테이블 생성
 
 데이터베이스가 생성되면 다음 SQL 쿼리를 사용하여 `people`이라는 이름의 테이블을 만든다.
 
@@ -65,7 +65,7 @@ CREATE TABLE people ( /* 이름이 "people"인 테이블(릴레이션) 생성 */
 
 ![](https://github.com/Peg-board/CPP_SQLite_database_search_example/blob/master/image/term/%EC%8A%A4%ED%81%AC%EB%A6%B0%EC%83%B7%202024-05-02%20%EC%98%A4%ED%9B%84%209.43.59.png?raw=true)
 
-# 데이터 삽입
+## 데이터 삽입
 
 다음 SQL 쿼리를 사용하여 데이터를 `people` 테이블에 삽입한다.
 
@@ -85,7 +85,7 @@ VALUES
 
 ![](https://github.com/Peg-board/CPP_SQLite_database_search_example/blob/master/image/term/%EC%8A%A4%ED%81%AC%EB%A6%B0%EC%83%B7%202024-05-02%20%EC%98%A4%ED%9B%84%209.57.37.png?raw=true)
 
-# 데이터 조회
+## 데이터 조회
 
 다음 SQL 쿼리를 사용하여 `people` 테이블의 모든 데이터를 조회합니다.
 
@@ -95,7 +95,7 @@ SELECT * FROM people; /*'people'테이블의 모든 속성(열) 선택*/
 
 ![](https://github.com/Peg-board/CPP_SQLite_database_search_example/blob/master/image/term/%EC%8A%A4%ED%81%AC%EB%A6%B0%EC%83%B7%202024-05-02%20%EC%98%A4%ED%9B%84%2010.03.03.png?raw=true)
 
-# 데이터 수정
+## 데이터 수정
 
  다음 SQL 쿼리를 사용하여 `people` 테이블의 데이터를 수정한다.
 
@@ -113,7 +113,7 @@ WHERE id = 2;
 
 ![](https://github.com/Peg-board/CPP_SQLite_database_search_example/blob/master/image/term/%EC%8A%A4%ED%81%AC%EB%A6%B0%EC%83%B7%202024-05-02%20%EC%98%A4%ED%9B%84%2010.09.02.png?raw=true)
 
-# 데이터 삭제
+## 데이터 삭제
 
 다음 SQL 쿼리를 사용하여 `people` 테이블의 데이터를 삭제한다.
 
@@ -129,14 +129,14 @@ WHERE id = 3;
 
 # **`SQLite in C++`**
 
-# Xcode에서 라이브러리와 바이너리 연결 설정
+## Xcode에서 라이브러리와 바이너리 연결 설정
 
 [프로잭트이름].xcodeproj → Build Phases → Link Binary With Libraries → 
 libsqlite3.tbd, libsqlite3.0.tbd 선택
 
 ![](https://github.com/Peg-board/CPP_SQLite_database_search_example/blob/master/image/Xcode/%EC%8A%A4%ED%81%AC%EB%A6%B0%EC%83%B7%202024-05-01%20%EC%98%A4%EC%A0%84%2011.58.01.png?raw=true)
 
-# C++로 모든 속성(열)을 조회하는 코드
+## C++로 모든 속성(열)을 조회하는 코드
 
 ```cpp
 #include <iostream>
