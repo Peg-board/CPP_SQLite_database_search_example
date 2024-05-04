@@ -27,7 +27,7 @@ brew install sqlite3
 sqlite3 --version
 ```
 
-![sqlite3](image/term/스크린샷 2024-05-02 오후 9.25.35.png)
+![](https://github.com/Peg-board/CPP_SQLite_database_search_example/blob/master/image/term/%EC%8A%A4%ED%81%AC%EB%A6%B0%EC%83%B7%202024-05-02%20%EC%98%A4%ED%9B%84%209.25.35.png?raw=true)
 
 # 데이터베이스 생성
 
