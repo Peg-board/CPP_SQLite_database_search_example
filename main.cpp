@@ -10,14 +10,14 @@
 #include <string>
 using namespace std;
 
-//점수를 저장할 구조체 s1
+// 점수를 저장할 구조체 s1
 struct {
     int totalKor = 0;
     int totalMath = 0;
     int studentCount = 0;
 }s1;
 
-//callback(data, 갯수, char형 포인터 변수(C 스타일 문자열) 배열, char형 포인터 변수(C 스타일 문자열) 배열)
+// 카디널리티 만큼 자동 반복
 static int callback(void* data, int argc, char** argv, char** azColName) {
     int korScore = atoi(argv[2]);
     int mathScore = atoi(argv[3]);
@@ -35,16 +35,16 @@ static int callback(void* data, int argc, char** argv, char** azColName) {
     return 0;
 }
 
-// 오류처리 함수
+
 int error(char* message, sqlite3** db){
     cerr << message << sqlite3_errmsg(*db) << endl;
-    sqlite3_close(*db); // 데이터베이스 연결을 끊고 자원 할당 해제
+    sqlite3_close(*db);
     return 1;
 }
 
-// 데이터베이스를 여는 함수
+
 void is_open(sqlite3** db, const char* dbPath){
-    int rc; // rc(return code): 작업의 성공여부를 나타냄
+    int rc;
     
     // 데이터베이스 열기
     rc = sqlite3_open(dbPath, db);
@@ -71,22 +71,17 @@ void exec_query(sqlite3* db, const char* query){
         cout << "성공적으로 쿼리가 실행되었습니다." << endl;
         cout << "국어 총점: " << s1.totalKor << ", 평균: " << (double)s1.totalKor / s1.studentCount << endl;
         cout << "수학 총점: " << s1.totalMath << ", 평균: " << (double)s1.totalMath / s1.studentCount << endl;
-        
     }
-        
-        
+               
 }
 
 int main() {
-    sqlite3* db; // 데이터베이스 객체 포인터로, 핸들러이다.
-    string dbPath = "/Users/seongjin/sqlite3/sj.db"; // 데이터베이스 경로
-    const char* query = "SELECT * FROM grade"; // query문
+    sqlite3* db;
+    string dbPath = "/Users/seongjin/sqlite3/sj.db";
+    const char* query = "SELECT * FROM grade";
     
-    is_open(&db, dbPath.c_str()); // c.str(const char* 형태로 반환)
-
+    is_open(&db, dbPath.c_str());
     exec_query(db, query);
-    
-    //데이터베이스를 닫는 함수
     sqlite3_close(db);
     
     return 0;
