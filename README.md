@@ -27,7 +27,7 @@ brew install sqlite3
 sqlite3 --version
 ```
 
-## 사진
+![](image/term/스크린샷 2024-05-02 오후 9.25.35.png)
 
 # 데이터베이스 생성
 
