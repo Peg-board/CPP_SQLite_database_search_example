@@ -131,7 +131,7 @@ WHERE id = 3;
 [프로잭트이름].xcodeproj → Build Phases → Link Binary With Libraries → 
 libsqlite3.tbd, libsqlite3.0.tbd 선택
 
-## 사진
+![](https://github.com/Peg-board/CPP_SQLite_database_search_example/blob/master/image/Xcode/%EC%8A%A4%ED%81%AC%EB%A6%B0%EC%83%B7%202024-05-01%20%EC%98%A4%EC%A0%84%2011.58.01.png?raw=true)
 
 # C++로 모든 속성(열)을 조회하는 코드
 
