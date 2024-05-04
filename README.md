@@ -60,7 +60,7 @@ CREATE TABLE people ( /* 이름이 "people"인 테이블(릴레이션) 생성 */
 .head on /*속성(열) 이름 표시*/
 ```
 
-## 사진
+![](https://github.com/Peg-board/CPP_SQLite_database_search_example/blob/master/image/term/%EC%8A%A4%ED%81%AC%EB%A6%B0%EC%83%B7%202024-05-02%20%EC%98%A4%ED%9B%84%209.43.59.png?raw=true)
 
 # 데이터 삽입
 
