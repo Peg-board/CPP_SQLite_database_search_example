@@ -4,7 +4,6 @@ $$
 $$
 #
 <br />
-<br />
 
 ```
 제작취지
@@ -14,7 +13,8 @@ SQLite를 c++에서 사용하는 방법을 초등학교 5학년이 보고 따라
 OS: macOS Sonoma
 IDE: Xcode version 15.3 (15E204a)
 ```
-
+<br />
+<br />
 # **`SQLite`**
 
 ## SQLite 설치
